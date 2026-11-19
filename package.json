@@ -1,0 +1,47 @@
+{
+  "name": "usecos-mcp",
+  "version": "1.0.0",
+  "description": "Official UseCOS MCP server for deterministic Canadian mortgage, renewal, paycheck tax, GST/HST, auto loan, and ISO 3779 VIN calculations.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "bin": {
+    "usecos-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node ./dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "canadian-mortgage",
+    "osfi-b20",
+    "cra-payroll",
+    "gst-hst",
+    "vin-validator",
+    "iso-3779",
+    "canada-finance",
+    "usecos"
+  ],
+  "author": "UseCOS Research & Engineering <team@usecos.app> (https://usecos.app)",
+  "homepage": "https://usecos.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rivlosys/usecos-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rivlosys/usecos-mcp/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.28.0",
+    "zod": "^4.4.3"
+  }
+}
